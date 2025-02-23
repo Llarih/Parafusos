@@ -1,0 +1,435 @@
+/* Estilo para a Aba Início */
+.inicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.inicio-titulo {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.inicio-descricao {
+    font-size: 1.5rem;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Estilo para a Aba Sobre */
+#sobre {
+    background: linear-gradient(135deg, #2196F3, #1E88E5);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#sobre h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+#sobre p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo para a Aba Sensor */
+#sensor {
+    background: linear-gradient(135deg, #FF9800, #FB8C00);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+#sensor h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+#sensor p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo para a imagem do sensor */
+#sensorImage {
+    max-width: 200px; /* Define uma largura máxima menor para a imagem do sensor */
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Estilo para o botão */
+#scrollToImageBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToImageBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para a Aba Simulação */
+#simulacao {
+    background: linear-gradient(135deg, #9C27B0, #8E24AA);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#simulacao h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+#simulacao p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#simulationArea {
+    position: relative;
+    width: 800px;
+    height: 300px;
+    margin: 20px auto;
+    border: 2px solid #444;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+#conveyorBelt {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-color: #999;
+    top: 100px;
+    overflow: hidden;
+}
+
+.piece {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+    border: 2px solid #333;
+    top: 25px;
+    left: 0;
+    transition: left 2.5s linear;
+}
+
+.screw {
+    width: 8px;
+    height: 8px;
+    background-color: #FFD700;
+    position: absolute;
+    border-radius: 50%;
+    display: none;
+}
+
+.screw-top-left { top: 2px; left: 2px; }
+.screw-top-right { top: 2px; right: 2px; }
+.screw-bottom-left { bottom: 2px; left: 2px; }
+.screw-bottom-right { bottom: 2px; right: 2px; }
+
+#screwBox {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 150px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #333;
+    text-align: left;
+    color: #333; /* Cor padrão do texto */
+}
+
+#screwBox h3 {
+    color: #FF5722; /* Cor do texto "Caixa de Parafusos" */
+}
+
+#screwBox p {
+    color: #4CAF50; /* Cor do texto "Peso: 100g" */
+}
+
+#statusMessage {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#pieceCountArea {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilo para a Aba Benefícios */
+#beneficios {
+    background: linear-gradient(135deg, #FF5722, #E64A19);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#beneficios h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+#beneficios p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo para a Aba Conclusão */
+#conclusao {
+    background: linear-gradient(135deg, #607D8B, #546E7A);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#conclusao h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+#conclusao p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo para a Aba Proposta */
+#proposta {
+    background: linear-gradient(135deg, #3F51B5, #303F9F);
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#proposta h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+#proposta p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilo para o contêiner das imagens */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo para as imagens */
+.side-image {
+    width: 500px; /* Define a largura fixa das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para as imagens das seções */
+.section-image {
+    width: 100%;
+    max-width: 300px; /* Define a largura máxima das imagens */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem e adiciona margem superior e inferior */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a tabela de proposta */
+.proposal-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proposal-table th, .proposal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.proposal-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.proposal-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.proposal-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para destacar linhas específicas */
+.proposal-table .highlight td {
+    color: blue;
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+/* Estilo para a tabela de proposta */
+.proposal-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proposal-table th, .proposal-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Estilo para alternar cores das colunas */
+.proposal-table tr th:nth-child(odd),
+.proposal-table tr td:nth-child(odd) {
+    background-color: #4CAF50; /* Azul para colunas ímpares */
+    color: white; /* Letras brancas */
+}
+
+.proposal-table tr th:nth-child(even),
+.proposal-table tr td:nth-child(even) {
+    background-color: #fff; /* Branco para colunas pares */
+    color: #4CAF50; /* Letras azuis */
+}
+
+.proposal-table th {
+    font-weight: bold;
+}
+
+.proposal-table tr:nth-child(even) {
+    background-color: transparent;
+}
+
+.proposal-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para destacar linhas específicas */
+.proposal-table .highlight td {
+    color: blue;
+}
+

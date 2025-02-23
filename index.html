@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulação</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Estilos adicionais para a tabela da aba Proposta */
+    .proposal-table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    .proposal-table, .proposal-table th, .proposal-table td {
+      border: 1px solid #ccc;
+    }
+    .proposal-table th, .proposal-table td {
+      padding: 8px;
+      text-align: left;
+    }
+    .proposal-table th {
+      background-color: #f2f2f2;
+    }
+    .highlight {
+      background-color: #e6e6e6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projeto Fábrica Lean</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio" class="tab-link" data-tab="inicio">Início</a></li>
+        <li><a href="#sobre" class="tab-link" data-tab="sobre">Sobre o Projeto</a></li>
+        <li><a href="#sensor" class="tab-link" data-tab="sensor">Sensor</a></li>
+        <li><a href="#simulacao" class="tab-link" data-tab="simulacao">Simulação</a></li>
+        <li><a href="#beneficios" class="tab-link" data-tab="beneficios">Benefícios</a></li>
+        <li><a href="#conclusao" class="tab-link" data-tab="conclusao">Conclusão</a></li>
+        <li><a href="#proposta" class="tab-link" data-tab="proposta">Proposta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="tab-content">
+      <div class="inicio-container">
+        <h2 class="inicio-titulo">Bem-vindo ao Projeto Fábrica Lean</h2>
+        <p class="inicio-descricao">Este projeto visa demonstrar os princípios da metodologia Lean aplicados a uma linha de produção simulada.</p>
+      </div>
+    </section>
+
+    <section id="sobre" class="tab-content">
+      <h2>Sobre o Projeto</h2>
+      <p>O Projeto Fábrica Lean foca na eliminação do botão de chamada CT, automatizando o controle de peças e otimizando o tempo do operador. Isso permite que ele se concentre totalmente no processo de montagem, sem se preocupar com o monitoramento do estoque.</p>
+      <div class="image-container">
+        <img src="images/traok.jpg" alt="Traok" class="section-image">
+        <img src="images/tra.jpg" alt="Tra" class="section-image">
+      </div>
+    </section>
+
+    <section id="sensor" class="tab-content">
+      <h2>Sensor</h2>
+      <p>O sensor de carga de compressão, um dispositivo compacto e preciso que monitora o peso das caixas em tempo real. Quando o estoque atinge o limite mínimo, o sensor envia automaticamente um alerta para reposição, garantindo um fluxo contínuo e sem interrupções.</p>
+      <img id="sensorImage" src="images/sensor.jpg" alt="Sensor Image" class="section-image">
+    </section>
+
+    <section id="simulacao" class="tab-content">
+      <h2>Simulação Interativa</h2>
+      <div id="simulationArea">
+        <div id="conveyorBelt"></div>
+        <div id="screwBox">
+          <h3>Caixa de Parafusos</h3>
+          <p>Peso: <span id="screwCount">100</span>g</p>
+          <p id="statusMessage">✅ Estoque Normal</p>
+        </div>
+      </div>
+      <div id="pieceCountArea">
+        <h3>Total de Peças Produzidas: <span id="pieceCount">0</span></h3>
+        <button id="startBtn">Iniciar Simulação</button>
+      </div>
+    </section>
+
+    <section id="beneficios" class="tab-content">
+      <h2>Benefícios</h2>
+      <p>
+        🎯 Precisão no Controle de Estoque: Monitoramento em tempo real.<br>
+        📦 Reposição Automática: Elimina a necessidade de chamadas manuais.<br>
+        ⚡ Maior Eficiência: Reduz o tempo de inatividade na produção.<br>
+        👷 Menos Erros Humanos: Processo automatizado e confiável.<br>
+        🔄 Fluxo Contínuo: Garante que as peças estejam sempre disponíveis.
+      </p>
+      <img src="images/bene.jpg" alt="Benefícios" class="section-image">
+    </section>
+
+    <section id="conclusao" class="tab-content">
+      <h2>Conclusão</h2>
+      <p>O Projeto Fábrica Lean mostra como a automação pode otimizar processos, eliminando falhas humanas e reduzindo o tempo de inatividade. A retirada do botão de chamada (CT) é apenas o início de um brainstorming para eliminar outros botões e etapas manuais, buscando uma fábrica mais eficiente. Caso o projeto avance, melhorias como um sistema de fallback poderiam ser implementadas para garantir o funcionamento contínuo em situações de falha.</p>
+      <img src="images/nal.jpg" alt="Conclusão" class="section-image">
+    </section>
+
+    <section id="proposta" class="tab-content">
+      <h2>Proposta</h2>
+      <table class="proposal-table">
+        <thead>
+          <tr>
+            <th>Componente</th>
+            <th>Descrição/Opções</th>
+            <th>Quantidade</th>
+            <th>Custo Unitário (R$)</th>
+            <th>Custo Total (R$)</th>
+            <th>Tempo Estimado</th>
+            <th>Produto/Modelo</th>
+            <th>Fornecedor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sensor U2A (Célula de Carga de Alta Capacidade)</td>
+            <td>Célula de carga em aço inoxidável para medições de tensão e compressão (até 1.000 divisões); design robusto, ideal para pesagem de tanques suspensos.</td>
+            <td>4</td>
+            <td>R$ 2.000,00</td>
+            <td>R$ 8.000,00</td>
+            <td>1 semana</td>
+            <td>U2-1000</td>
+            <td>HBM</td>
+          </tr>
+          <tr>
+            <td>Transmissor para Amplificação do Sinal</td>
+            <td>Amplifica o sinal de baixa amplitude do sensor. Opções: conversor 4-20 mA para 0-10V ou 0-10V para 4-20 mA.</td>
+            <td>4</td>
+            <td>R$ 500,00</td>
+            <td>R$ 2.000,00</td>
+            <td>N/A</td>
+            <td>TS-400</td>
+            <td>Siemens</td>
+          </tr>
+          <tr>
+            <td>Controlador Lógico Programável (CLP)</td>
+            <td>Processa os sinais e executa lógicas de controle; disponível com entradas analógicas ou com suporte a Modbus.</td>
+            <td>1</td>
+            <td>R$ 3.000,00</td>
+            <td>R$ 3.000,00</td>
+            <td>N/A</td>
+            <td>Siemens S7-1200 Basic</td>
+            <td>Siemens</td>
+          </tr>
+          <tr>
+            <td>Módulo de Entrada Analógica</td>
+            <td>Converte sinais analógicos para formato compatível com o CLP, para casos onde este não possua entradas nativas.</td>
+            <td>1</td>
+            <td>R$ 1.000,00</td>
+            <td>R$ 1.000,00</td>
+            <td>N/A</td>
+            <td>SIModule-AI</td>
+            <td>Siemens</td>
+          </tr>
+          <tr>
+            <td>Protocolos de Comunicação</td>
+            <td>Permite a comunicação entre dispositivos via Modbus, Profibus, IO-Link ou Ethernet/IP.</td>
+            <td>1</td>
+            <td>R$ 2.000,00</td>
+            <td>R$ 2.000,00</td>
+            <td>N/A</td>
+            <td>PC-GW-200</td>
+            <td>Phoenix Contact</td>
+          </tr>
+          <tr>
+            <td>Serviço de Comunicação (opcional)</td>
+            <td>Integração e monitoramento dos dados via OPC UA ou API para o sistema supervisório.</td>
+            <td>1</td>
+            <td>R$ 5.000,00</td>
+            <td>R$ 5.000,00</td>
+            <td>N/A</td>
+            <td>OPC UA Integration Service</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Desenvolvimento de Plataforma Web e Mobile</td>
+            <td>Criação de plataforma interativa para controle e monitoramento da fábrica Lean.</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>R$ 15.000,00</td>
+            <td>3 a 9 meses</td>
+            <td>Plataforma Lean Automation v1.0</td>
+            <td>N/A</td>
+          </tr>
+          <tr>
+            <td>Treinamento de Profissionais</td>
+            <td>Capacitação especializada para a operação do sistema de automação.</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>R$ 3.000,00</td>
+            <td>1 semana</td>
+            <td>Curso de Automação Industrial Training Pro</td>
+            <td>N/A</td>
+          </tr>
+          <tr class="highlight">
+            <td>Total Geral</td>
+            <td colspan="3"></td>
+            <td>R$ 39.000,00</td>
+            <td colspan="3"></td>
+          </tr>
+        </tbody>
+      </table>
+      <img src="images/din.jpg" alt="Proposta" class="section-image">
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Projeto Fábrica Lean. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Script para gerenciar a troca de abas
+    document.addEventListener("DOMContentLoaded", function() {
+      const tabLinks = document.querySelectorAll(".tab-link");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      tabLinks.forEach(link => {
+        link.addEventListener("click", function(e) {
+          e.preventDefault();
+          // Remove a classe 'active' de todas as abas e conteúdos
+          tabLinks.forEach(link => link.classList.remove("active"));
+          tabContents.forEach(content => content.classList.remove("active"));
+
+          // Adiciona a classe 'active' à aba clicada e ao conteúdo correspondente
+          this.classList.add("active");
+          const tabId = this.getAttribute("data-tab");
+          document.getElementById(tabId).classList.add("active");
+        });
+      });
+    });
+    
+  </script>
+</body>
+</html>
+
